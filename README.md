@@ -1,6 +1,6 @@
 # Breaking Bingo
 
-Break this bingo before it beraks you.
+Break this bingo before it breaks you.
 
 
 
