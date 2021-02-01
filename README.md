@@ -1,11 +1,8 @@
 # Breaking Bingo
 
-Break this bingo before it breaks you.
+**Break this bingo before it breaks you**
 
 
-
-# Info
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -15,4 +12,4 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-###### Make sure ti run 'npm install' after downloading
+###### Make sure you run 'npm install' after downloading
