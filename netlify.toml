@@ -1,3 +1,0 @@
-[build]
-CI= npm run build
-publish = "build" # create-react-app builds to this folder, Netlify should serve all these files statically
