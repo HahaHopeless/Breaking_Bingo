@@ -1,0 +1,23 @@
+.btn{
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1d86cc, #1871ac);
+    box-shadow:  7px 7px 24px #145b8b,
+                 -7px -7px 24px #229ff3;
+             height: 5rem;
+             width: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all .3s ease !important;
+}
+
+.btn:active{        
+    background: #1B7DBF;
+    box-shadow: inset 7px 7px 24px #145b8b,
+                inset -7px -7px 24px #229ff3,
+                inset -7px -7px 24px rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
+

@@ -1,0 +1,131 @@
+$cell-dimensions: 7rem;
+$cell-color: rgba(255, 255, 255,0.5);
+$cell-dark: rgba(99, 99, 99, 0.7);
+$border-radius : 10px;
+$blur: 12px;
+
+.cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: $cell-color;
+  border-radius: $border-radius;
+  width: $cell-dimensions;
+  height: $cell-dimensions;
+  padding: 3px;
+  margin: 2px;
+  cursor: pointer;
+  display: flex;
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 10;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+  border: 1px solid rgba(225,225,225,0.15);
+}
+
+.cell_text {
+  text-align: center;
+  user-select: none;
+}
+
+.free_space {
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: $cell-dimensions;
+  height: $cell-dimensions;
+  padding: 3px;
+  margin: 2px;
+  cursor: default;
+  display: flex;
+  z-index: 10;
+  text-align: center;
+}
+
+.broken1 {
+  pointer-events:none;
+  background: $cell-dark;
+  border-radius: $border-radius;
+  width: $cell-dimensions;
+  height: $cell-dimensions;
+  padding: 3px;
+  margin: 2px;
+  cursor: pointer;
+  display: flex;
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+  background-image: url("../../Assets/Images/broken_glass.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 10;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+  border: 1px solid rgba(225,225,225,0.15);
+}
+.broken2 {
+  pointer-events:none;
+  background: $cell-dark;
+  border-radius: $border-radius;
+  width: $cell-dimensions;
+  height: $cell-dimensions;
+  padding: 3px;
+  margin: 2px;
+  cursor: pointer;
+  display: flex;
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+  background-image: url("../../Assets/Images/broken_glass2.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 10;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+  border: 1px solid rgba(225,225,225,0.15);
+}
+
+.cellIndex {
+  position: absolute;
+    top: -12px;
+    right: 2px;
+    font-size: 12px;
+}
+
+
+.winImage {
+  width: 60vw;
+}
+
+.winScreen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5091CE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cell, .broken1, .broken2, .free_space{
+    width: 4rem;
+  }
+  .winScreen{
+    width: 110vw;
+    top:-5rem;
+    left: 0rem
+  }
+  .winImage{
+    width: 150vw
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .cell, .broken1, .broken2, .free_space{
+    width: 10rem;
+    height: 10rem;
+  }
+}
