@@ -1,6 +1,5 @@
 import "./Cell_styles.scss";
-import React, { useState, useEffect, useRef } from "react";
-import _ from "lodash";
+import React, { useState, useEffect } from "react";
 import winimage from "../../Assets/Images/win.gif";
 
 var arr = [0];
